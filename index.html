@@ -1,141 +1,75 @@
 <!DOCTYPE html>
-<!--Declaration of the file type. Mentions wihch HTML is used. Also for the browser to know -->
 <html lang="en" dir="ltr">
-<!--Tells the browser that everything between the opening and closing tags
-  is going to be an HTML code. Consists of HEAD and BODY. -->
 
 <head>
-  <!--part of the html file that holds information about the web page and tells the browser
-  how to handle the page. Such as title of the particular page, etc -->
   <meta charset="utf-8">
-  <!--element provides more metadata to the browser.
-      It tells the browser that all the content of the page is coded using utf-8  -->
-  <!--MOJIBAKE is the name of the jibrish that you see on your screen when the encoding goes wrong (the text is messed up) -->
-  <!--utf-8 goes together with HTML 5 -->
-  <title>Raz's Personal Site</title>
+  <title>Raz Israeli</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="Images/39514743_10215056439796236_7251373859146825728_n.jpg" alt="Me" width="200"></td>
-      <td>
-        <h1>Raz Israeli</h1>
-        <p><em><strong>Product Manager</strong></em></p>
-        <p>I am 34 years old, living in Israel.<br>
-          For the last 4 years I work as a product manager in high tech companies.<br>
-          Today, I am looking for my next challenge: I am looking for a place where I can grow personally <br>
-          and professionally, and contribute to the team with my experiece and knowledge. <br></p>
-          <a href="My Contact Details.html" target="_blank">My Contact Details and Social Media</a>
-      </td>
-    </tr>
-  </table>
-  <!--This part is used for the website content :) -->
-  <hr size="6" noshade>
+  <!--div elements are used with style (css) for content dividing within the website. -->
+  <div class="topContainer">
+    <img class="topCloud" src="images\cloud.png" alt="Cloud-img">
+    <h1>I'm Raz.</h1>
+    <h2 class="aboutMe">A <u><i>product manager</u></i> at the beginning of the journey.</h2>
+    <img class="bottomCloud" src="images\cloud.png" alt="Cloud-img">
+    <img src="images\mountain.png" alt="Mountain-img">
+  </div>
 
-  <h3>Education</h3>
-  <ul>
-    <li>Product League - Mentoring Program</li>
-    <li>Product Management Course - John Bryce</li>
-    <li>Ruppin Academic Center - Industrial Engineering and Management</li>
-  </ul>
-  <hr size="3" noshade>
-  <h3>Work Experience</h3>
-  <table>
-    <!--#1 Best Practice for table is to always use all the elements: <table>,<thead>,<tbody>, and <tfoot> and separate the content (in the body) from the header and footer.-->
-    <!--#2 Best Practice would be to leave the tabledesign for the CSS page we will create later on. -->
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <!-- row number 1-->
-        <td>07/2021 - Current</td>
-        <td>Product Manager at NICE, Performance Management LoB</td>
-      </tr>
-      <tr>
-        <!-- row number 2-->
-        <td>01/2019 - 07/2021</td>
-        <td>Product Manager at Go Global Travel</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <!-- The table footer allows to separate some cells from the table for functional reasons, but in this example I did not use it. -->
-    </tfoot>
-  </table>
-  <hr size="3" noshade>
-  <h3>Skills</h3>
-  <!--Star moji to use for ranking: ★✰ -->
-  <table>
-    <tr>
-      <td>  <table cellspacing="15">
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>Product Management</td>
-            <td>★★★✰✰</td>
-          </tr>
-          <tr>
-            <td>Project Management</td>
-            <td>★★★★✰</td>
-          </tr>
-          <tr>
-            <td>Analytical Skills</td>
-            <td>★★★★✰</td>
-          </tr>
-          <tr>
-            <td>Dancing Skills</td>
-            <td>★✰✰✰✰</td>
-          </tr>
-        </table>
-      </td>
-      <td>  <table cellspacing="15">
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>Comunnication Skills</td>
-            <td>★★★★★</td>
-          </tr>
-          <tr>
-            <td>Business Development</td>
-            <td>★★✰✰✰</td>
-          </tr>
-          <tr>
-            <td>Design</td>
-            <td>★★★✰✰</td>
-          </tr>
-          <tr>
-            <td>Playing Piano</td>
-            <td>✰✰✰✰✰</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr size="3" noshade>
-  <h3><a href="My Hobbies.html" target="_blank">My Hobbies</a></h3>
-  <h3>Amazing people I love to look at and learn from</h3>
-  <a href="https://www.youtube.com/watch?v=BCY2ZEZQGYs" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.KmEtvZAJL4dqIfICFyzSHAHaFH&pid=Api" alt="CR7" width="150"></a><br>
-  <!--The alt text could help google understand what your website is aobut,
-      since they can't always understans from the image itself -->
-  <a href="https://www.youtube.com/watch?v=tRME2xXrLvI" target="_blank"><img src="Images/th.jpg" width="150" alt="Alon Ulman"></a><br>
+  <div class="middleContainer">
+    <div class="profile">
+      <img src="images\me.jpg" alt="mySelf">
+      <h2>Hello 😊</h2>
+      <p class="intro">I'm a product manager, and currently working on sharpening my web development skills</p>
+    </div>
+    <hr>
+
+    <div class="skills">
+      <h2>My Skills.</h2>
+
+      <div class="skill-row">
+        <img class="communicationImage" src="images\communication.png" alt="communicationSkills">
+        <h3>Communication</h3>
+        <p>I really love and enjoy talking with people about ideas and sharing insights.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="projectImage" src="images\project.png" alt="projectManagement">
+        <h3>Project Management</h3>
+        <p>I am good at leading complicated projects that involve different stakeholders, while taking ownership of the process end-to-end.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="AnalyticalImage" src="images\analytical.png" alt="productDesign">
+        <h3>Learning New Skills</h3>
+        <p>No, really. I LOVE learning new things! Right now I am working on my full stack development skills while expandind my knowledge about product management methods and best practices.</p>
+      </div>
+
+    </div>
+
+    <hr>
+    <div class="contact-me">
+      <h2>Let's get In Touch ✌</h2>
+      <h3 class="knowMeh3">If you are curious to know me better, here are my contact details.</h3>
+      <p class="knowMeParagraph">Almost forgot to mention that what makes me feel best are my hobbies:<br>outdoor running 🏃, GYM 💪 and swimming 🏊.</p>
+      <a class="btn" href="mailto:razisraeli1@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottomContainer">
+    <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/razisraeli//">LinkedIn</a>
+    <a class="footer-link" target="_blank" href="https://twitter.com/israeli_raz">Twitter</a>
+    <a class="footer-link" target="_blank" href="https://www.facebook.com/raz.israeli.3/">Facebook</a>
+    <p class="footerParagraph">© 2022 Raz Israeli.</p>
+  </div>
 </body>
 
+
+
 </html>
-
-
-
-
-
-<!-- -->
